@@ -14,3 +14,16 @@ Directives:
   - The cart has a 'Select Coupon' input. On selecting a coupon from this input, an appropriate discount is applied and the total price is calculated and displayed. (Subtotal - Discount = Total Price)
 4. Items should be displayed in the Cart component in the order they are added to the cart. 
 5. The list of products and the cart object are passed as props to the Product Listing component and the Cart component respectively.
+
+Each product object contains the following properties: 
+  - name: Name of the product. [STRING]
+  - price: Price of the product. [NUMBER]
+  - id: Unique ID of the product. (Auto Generated) [NUMBER]
+  - image: The image URL of the product. [STRING]
+  - cartQuantity: The quantity of the item in the cart. The default value should be 0. [NUMBER]
+
+Each item in the cart, CartItem, has the following properties:
+  - id: The ID of the product added to the cart. [NUMBER]
+  - item: The heading property of the product. [STRING]
+  - quantity: The quantity of the item in the cart. [NUMBER]
+  - price: The total price of the item in the cart. (quantity x product.price) [NUMBER]
